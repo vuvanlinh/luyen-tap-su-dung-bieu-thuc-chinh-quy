@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra mã số bảo mật hợp lệ</title>
+</head>
+<body>
+          <script>
+              let securityCode = prompt("Nhập số bảo mật : ");
+              let securityCodechecker = /^[aAbBcC][0-9]{6}[xXyYzZ]$/;
+              a=securityCodechecker.test(securityCode);
+              if (a) {
+                  alert("Số bảo mật hợp lệ ")
+              }else alert("Số bảo mật không hợp lệ");
+
+          </script>
+</body>
+</html>
