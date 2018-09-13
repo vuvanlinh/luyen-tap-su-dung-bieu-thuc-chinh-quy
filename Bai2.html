@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dem so</title>
+</head>
+<body>
+        <script>
+            let str = prompt("Nhập chuỗi : ");
+            let checkNumber = /\d/;
+            if (checkNumber.test(str)) {
+                let num_matches = str.match(/[0-9]/g).length;
+                alert("Trong chuỗi có "+num_matches+" số");
+            }else alert('Trong chuỗi không có số');
+        </script>
+</body>
+</html>
