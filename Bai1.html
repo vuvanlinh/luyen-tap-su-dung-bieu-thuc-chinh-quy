@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra chuỗi đưa vào có đúng dạng dd/mm/yyyy</title>
+</head>
+<body>
+      <script>
+          let day = prompt("Nhập vào ngày tháng năm(dạng dd/mm/yyyy): ");
+          let regex = /^[0-9][0-9]\/[0-9][0-9]\/[[0-9][0-9][0-9][0-9]$/;
+          if (regex.test(day))  {
+              alert("Nhập vào đúng định dạng ngày!")
+          }else alert("Định dạng ngày sai")
+
+      </script>
+</body>
+</html>
