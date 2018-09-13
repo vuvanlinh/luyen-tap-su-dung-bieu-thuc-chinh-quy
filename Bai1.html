@@ -7,7 +7,7 @@
 <body>
       <script>
           let day = prompt("Nhập vào ngày tháng năm(dạng dd/mm/yyyy): ");
-          let regex = /^[0-9][0-9]\/[0-9][0-9]\/[[0-9][0-9][0-9][0-9]$/;
+          let regex = /^\d\d\/\d\d\/\d\d\d\d$/;
           if (regex.test(day))  {
               alert("Nhập vào đúng định dạng ngày!")
           }else alert("Định dạng ngày sai")
